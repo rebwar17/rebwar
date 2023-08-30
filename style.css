@@ -1,0 +1,38 @@
+
+
+body {margin:0;}
+/*unlisted items achtergond positie breedte etc*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+/*listed items aan linker kant*/
+li {
+  float: left;
+}
+/* listed item achtergronden vorm breedteetc*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*reactie als muis erover heen gaat*/
+li a:hover:not(active) {
+  background-color: black;
+}
+ /*geeft de term active een betekenis*/
+.active {
+  background-color: seagreen;
+}
+
+
+
+
