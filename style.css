@@ -1,38 +1,54 @@
-
-
-body {margin:0;}
-/*unlisted items achtergond positie breedte etc*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-} 
-/*listed items aan linker kant*/
-li {
-  float: left;
-}
-/* listed item achtergronden vorm breedteetc*/
-li a {
-  display: block;
+.dropbtn {
+  background-color: #0ea6c1;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-}
-/*reactie als muis erover heen gaat*/
-li a:hover:not(active) {
-  background-color: black;
-}
- /*geeft de term active een betekenis*/
-.active {
-  background-color: seagreen;
+  display: block;
 }
 
+.dropdown-content a:hover {background-color: #ddd;}
 
+.dropdown:hover .dropdown-content {display: block;}
 
+.dropdown:hover .dropbtn {background-color: #1ad8d8;}
 
+body {
+  background-image: url("background.png");
+  height: 100%;
+  background-size: 2500px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+p {
+  color: white;
+}
+h3 {
+  color: white;
+}
